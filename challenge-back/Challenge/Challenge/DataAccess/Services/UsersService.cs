@@ -17,12 +17,12 @@ namespace Challenge.DataAccess.Services
             _logger = logger;
         }
 
-        public async Task<Users> GetUserByUserAndPassword(string usuario, string pass)
+        public async Task<Users> GetUserByUserAndPassword(string email, string pass)
         {
             try
             {
-                Users user = await _usersRepository.GetUserByUserAndPassword(usuario, pass);
-                if (user == null)
+                Users user = await _usersRepository.GetUserByUserAndPassword(email, pass);
+                if (email == null)
                 {
                     throw new UnauthorizedAccessException();
                 }

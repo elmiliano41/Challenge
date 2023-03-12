@@ -76,3 +76,161 @@ ERROR|2023-03-11 18:40:28.2899|0|Challenge.DataAccess.Services.UsersService|Data
 ERROR|2023-03-11 18:40:28.3571|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
 ERROR|2023-03-11 18:40:35.2744|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
    at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-11 18:52:34.6074|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ERROR|2023-03-11 18:52:34.6906|0|Challenge.DataAccess.Services.UsersService|Data is Null. This method or property cannot be called on Null values. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Challenge.DataAccess.Repository.Repositories.UserRepository.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\UserRepository.cs:line 24
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 24
+ERROR|2023-03-11 18:52:34.7469|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+DEBUG|2023-03-11 22:35:33.4185|0|Program|init main 
+INFO|2023-03-11 22:35:34.6609|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-11 22:35:34.6766|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-11 22:35:34.6766|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-11 22:35:34.6766|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-11 22:35:34.6766|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-11 22:36:06.3826|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ERROR|2023-03-11 22:36:06.7065|0|Challenge.DataAccess.Services.UsersService|Data is Null. This method or property cannot be called on Null values. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Challenge.DataAccess.Repository.Repositories.UserRepository.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\UserRepository.cs:line 24
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 24
+ERROR|2023-03-11 22:36:06.9223|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-11 22:36:38.0444|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-11 22:36:46.6813|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-11 22:36:52.3113|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ERROR|2023-03-11 22:36:52.4881|0|Challenge.DataAccess.Services.UsersService|Data is Null. This method or property cannot be called on Null values. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Challenge.DataAccess.Repository.Repositories.UserRepository.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\UserRepository.cs:line 24
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 24
+ERROR|2023-03-11 22:36:52.6161|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-11 22:37:19.3980|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ERROR|2023-03-11 22:37:19.5364|0|Challenge.DataAccess.Services.UsersService|Data is Null. This method or property cannot be called on Null values. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Challenge.DataAccess.Repository.Repositories.UserRepository.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\UserRepository.cs:line 24
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 24
+ERROR|2023-03-11 22:37:23.3369|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-11 22:37:43.8837|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-11 22:38:39.5532|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+DEBUG|2023-03-11 22:39:54.5464|0|Program|init main 
+INFO|2023-03-11 22:39:55.6906|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-11 22:39:55.7126|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-11 22:39:55.7126|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-11 22:39:55.7126|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-11 22:39:55.7192|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-11 22:40:34.1653|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ERROR|2023-03-11 22:40:34.5246|0|Challenge.DataAccess.Services.UsersService|Data is Null. This method or property cannot be called on Null values. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Challenge.DataAccess.Repository.Repositories.UserRepository.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\UserRepository.cs:line 24
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 24
+ERROR|2023-03-11 22:40:39.8751|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-11 22:42:09.3446|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ERROR|2023-03-11 22:42:09.4969|0|Challenge.DataAccess.Services.UsersService|Data is Null. This method or property cannot be called on Null values. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Challenge.DataAccess.Repository.Repositories.UserRepository.GetUserByUserAndPassword(String usuario, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\UserRepository.cs:line 24
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 24
+ERROR|2023-03-11 22:42:13.0831|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+DEBUG|2023-03-11 22:58:54.6473|0|Program|init main 
+INFO|2023-03-11 22:58:55.6497|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-11 22:58:55.6679|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-11 22:58:55.6679|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-11 22:58:55.6679|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-11 22:58:55.6726|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-11 22:59:40.6185|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-11 22:59:58.5885|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+DEBUG|2023-03-11 23:01:24.1315|0|Program|init main 
+INFO|2023-03-11 23:01:25.4378|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-11 23:01:25.5105|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-11 23:01:25.5105|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-11 23:01:25.5162|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-11 23:01:25.5162|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-11 23:02:49.1152|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-11 23:02:59.1337|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+DEBUG|2023-03-11 23:05:46.5665|0|Program|init main 
+INFO|2023-03-11 23:05:47.9876|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-11 23:05:48.0084|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-11 23:05:48.0084|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-11 23:05:48.0084|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-11 23:05:48.0084|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-11 23:06:07.9257|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-11 23:06:13.5108|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+DEBUG|2023-03-11 23:07:02.1599|0|Program|init main 
+INFO|2023-03-11 23:07:03.2983|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-11 23:07:03.3139|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-11 23:07:03.3139|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-11 23:07:03.3139|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-11 23:07:03.3139|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-11 23:07:22.4436|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-11 23:07:29.4521|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
