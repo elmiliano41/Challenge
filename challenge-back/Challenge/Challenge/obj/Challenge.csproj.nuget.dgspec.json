@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elmil\\Desktop\\Challenge MIND\\challenge-back\\Challenge\\Challenge\\Challenge.csproj": {}
+    "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\Challenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elmil\\Desktop\\Challenge MIND\\challenge-back\\Challenge\\Challenge\\Challenge.csproj": {
+    "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\Challenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elmil\\Desktop\\Challenge MIND\\challenge-back\\Challenge\\Challenge\\Challenge.csproj",
+        "projectUniqueName": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\Challenge.csproj",
         "projectName": "Challenge",
-        "projectPath": "C:\\Users\\elmil\\Desktop\\Challenge MIND\\challenge-back\\Challenge\\Challenge\\Challenge.csproj",
+        "projectPath": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\Challenge.csproj",
         "packagesPath": "C:\\Users\\elmil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elmil\\Desktop\\Challenge MIND\\challenge-back\\Challenge\\Challenge\\obj\\",
+        "outputPath": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Archivos de programas(x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
@@ -57,7 +61,7 @@
               "target": "Package",
               "version": "[5.2.9, )"
             },
-            "Microsoft.AspNetCore.Authentication.Core": {
+            "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
@@ -73,10 +77,6 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[7.0.3, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -87,7 +87,11 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
-            "Microsoft.IdentityModel.Logging": {
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            },
+            "Microsoft.IdentityModel.LoggingExtensions": {
               "target": "Package",
               "version": "[6.27.0, )"
             },
@@ -95,13 +99,49 @@
               "target": "Package",
               "version": "[6.27.0, )"
             },
+            "Microsoft.IdentityModel.Protocols.OpenIdConnect": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.27.0, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "NLog.Database": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "NLog.Schema": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

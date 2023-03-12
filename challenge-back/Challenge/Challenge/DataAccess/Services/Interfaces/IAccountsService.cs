@@ -7,7 +7,7 @@ namespace Challenge.DataAccess.Services.Interfaces
     {
         public Task<Accounts> GetAccount(int accountId);
         public Task<List<Accounts>> GetAccounts();
-        public Task<AccountsDTO> PostAccount(AccountsDTO account);
+        public Task<Accounts> PostAccount(AccountsDTO account);
         public Task<Accounts> UpdateAccount(AccountsDTO account);
         public Task<Accounts> DeleteAccount(int accountId);
     }

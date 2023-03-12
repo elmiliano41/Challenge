@@ -15,7 +15,7 @@ namespace Challenge.DataAccess.Repository.Context
             : base(options)
         {
         }
-        //public DbSet<Sessions> Sessions { get; set; }
+        public DbSet<Sessions> Sessions { get; set; }
         //public DbSet<Movements> Movements { get; set; }
         public DbSet<Users> Users { get; set; }
         public DbSet<Accounts> Accounts { get; set; }

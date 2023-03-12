@@ -14,6 +14,7 @@ namespace Challenge.DataAccess.Entities
         public string CV { get; set; }
         public string TechnicalKnowledge { get; set; }
         public bool isAdmin { get; set; }
+        public bool isSU { get; set; }
         public int EnglishLevelId { get; set; }
         public int TeamId { get; set; }
     }

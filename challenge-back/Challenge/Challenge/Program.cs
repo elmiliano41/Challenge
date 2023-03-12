@@ -1,19 +1,19 @@
 using Microsoft.EntityFrameworkCore;
-//using NLog;
-//using NLog.Web;
+using NLog;
+using NLog.Web;
 using Challenge.DataAccess.Repository.Context;
 using Challenge.Infraestructure;
-//using Challenge.Utils.Security;
+using Challenge.Utils.Security;
 
-//var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
-// NLog: setup the path
+var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
+//NLog: setup the path
 var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
 if (!Directory.Exists(logPath))
 {
     Directory.CreateDirectory(logPath);
 }
-//NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
-//logger.Debug("init main");
+NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
+logger.Debug("init main");
 
 try
 {
@@ -21,7 +21,7 @@ try
 
     // NLog: Setup NLog for Dependency injection
     builder.Logging.ClearProviders();
-    //builder.Host.UseNLog();
+    builder.Host.UseNLog();
 
     builder.Services.AddCors(o =>
         o.AddDefaultPolicy(b =>
@@ -37,7 +37,7 @@ try
 
     AuthenticationConfig authenticationConfig = new AuthenticationConfig(builder);
 
-    //builder.Services.AddSingleton<AuthUtils>(new AuthUtils(builder.Configuration));
+    builder.Services.AddSingleton<AuthUtils>(new AuthUtils(builder.Configuration));
 
     string connectionStringtest = builder.Configuration.GetConnectionString("EscuelaConnection");
 
@@ -81,12 +81,12 @@ try
 }
 catch (Exception ex)
 {
-    // NLog: catch setup errors
-    //logger.Error(ex, "Stopped program because of exception");
+//NLog: catch setup errors
+    logger.Error(ex, "Stopped program because of exception");
     throw;
 }
 finally
 {
-    // Ensure to flush and stop internal timers/threads before application exi
-    //NLog.LogManager.Shutdown();
+    //Ensure to flush and stop internal timers/ threads before application exi
+    NLog.LogManager.Shutdown();
 }

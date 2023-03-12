@@ -15,6 +15,7 @@ namespace Challenge.DataAccess.DTO.DTOMapping
         Password = users.Password,
         CV = users.CV,
         isAdmin = users.isAdmin,
+        isSU= users.isSU,
         TechnicalKnowledge = users.TechnicalKnowledge,
         EnglishLevelId = users.EnglishLevelId,
         TeamId = users.TeamId
