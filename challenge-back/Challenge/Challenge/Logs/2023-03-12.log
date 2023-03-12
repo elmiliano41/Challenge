@@ -1,0 +1,9 @@
+DEBUG|2023-03-12 00:38:45.1241|0|Program|init main 
+INFO|2023-03-12 00:38:46.3963|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-12 00:38:46.4139|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-12 00:38:46.4139|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-12 00:38:46.4139|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-12 00:38:46.4139|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-12 00:39:01.4660|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-12 00:39:06.6192|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
