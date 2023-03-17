@@ -23,7 +23,7 @@ const muiCache = createCache({
 
 function TableAccounts() {
     const navigate = useNavigate();
-    const { deleteAccount, accounts, getAccountData, getAccounts } = useChallenge();
+    const { deleteAccount,setAccount, accounts, getAccount, getAccounts } = useChallenge();
     const [responsive, setResponsive] = useState("standard");
     const [tableBodyHeight, setTableBodyHeight] = useState("400px");
     const [tableBodyMaxHeight, setTableBodyMaxHeight] = useState("");
@@ -63,7 +63,8 @@ function TableAccounts() {
             name: "name",
             options: { filterOptions: { fullWidth: true } },
         },
-        { label: "Description", name: "description" },
+        { label: "Manager", name: "operationsManager" },
+        { label: "Client", name: "clientName" },
         {
             label: "Edit",
             name: "accountId",
@@ -73,13 +74,13 @@ function TableAccounts() {
                     return (
                         <EditIcon style={{ cursor: 'pointer' }}
                             onClick={() => {
-                                getAccountData(value);
+                                getAccount(value);
                             }}
                         />
                     );
                 },
             },
-        },
+        },        
         {
             label: "Delete",
             name: "accountId",
@@ -124,7 +125,8 @@ function TableAccounts() {
                     variant="contained"
                     color="primary"
                     onClick={() => {
-                        navigate('/dashboard/Accounts/EditAddAccount');
+                        setAccount('');
+                        navigate('/dashboard/Accounts/EditAddAccounts');
                     }}
                     style={{ marginBottom: '10px' }}
                 >

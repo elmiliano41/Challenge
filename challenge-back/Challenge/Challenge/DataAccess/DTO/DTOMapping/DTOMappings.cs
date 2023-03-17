@@ -1,5 +1,4 @@
 ﻿using Challenge.DataAccess.Entities;
-using Challenge.DataAccess.Repository.Context;
 
 namespace Challenge.DataAccess.DTO.DTOMapping
 
@@ -16,6 +15,7 @@ namespace Challenge.DataAccess.DTO.DTOMapping
         Password = users.Password,
         CV = users.CV,
         isAdmin = users.isAdmin,
+        isSU= users.isSU,
         TechnicalKnowledge = users.TechnicalKnowledge,
         EnglishLevelId = users.EnglishLevelId,
         TeamId = users.TeamId
@@ -27,16 +27,15 @@ namespace Challenge.DataAccess.DTO.DTOMapping
         Name = accounts.Name,
         ClientName = accounts.ClientName,
         OperationsManager = accounts.OperationsManager,
-        CreatedDate = accounts.CreatedDate,
+        CreatedDate= accounts.CreatedDate,
     };
-        public static Teams Map(this TeamsDTO team)=>
-    new Teams
-    {
-        TeamId = team.TeamId,
-        Name = team.Name,
-        AccountId = team.AccountId
-    };
-
+        public static Teams Map(this TeamsDTO teams) =>
+new Teams
+{
+TeamId = teams.TeamId,
+Name = teams.Name,
+AccountId = teams.AccountId,
+};
     }
 
     #endregion

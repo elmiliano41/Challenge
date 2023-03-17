@@ -1,119 +1,13 @@
-DEBUG|2023-03-17 10:41:45.9835|0|Program|init main 
-INFO|2023-03-17 10:41:47.8753|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 10:41:47.8954|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 10:41:47.8954|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 10:41:47.8954|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 10:41:47.9029|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 11:52:08.3938|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 11:52:08.7762|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 11:54:37.9228|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 11:54:38.0566|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 11:55:47.2645|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-DEBUG|2023-03-17 12:05:26.3019|0|Program|init main 
-INFO|2023-03-17 12:05:27.6278|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:05:27.6480|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:05:27.6525|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:05:27.6525|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:05:27.6525|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:06:31.3867|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:07:04.2666|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:07:13.5894|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-DEBUG|2023-03-17 12:11:26.5304|0|Program|init main 
-INFO|2023-03-17 12:11:28.0062|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:11:28.0336|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:11:28.0336|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:11:28.0336|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:11:28.0336|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:11:29.4116|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:11:32.7131|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:11:35.3085|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-DEBUG|2023-03-17 12:14:13.9790|0|Program|init main 
-INFO|2023-03-17 12:14:15.2412|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:14:15.2659|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:14:15.2659|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:14:15.2659|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:14:15.2659|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:14:23.3314|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-DEBUG|2023-03-17 12:16:57.9275|0|Program|init main 
-INFO|2023-03-17 12:16:59.1749|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:16:59.1952|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:16:59.1952|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:16:59.2006|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:16:59.2006|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:17:07.1679|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-DEBUG|2023-03-17 12:17:53.0545|0|Program|init main 
-INFO|2023-03-17 12:17:54.3335|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:17:54.3594|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:17:54.3594|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:17:54.3594|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:17:54.3594|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 12:26:31.1351|0|Program|init main 
-INFO|2023-03-17 12:26:32.4500|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:26:32.7179|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:26:32.7179|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:26:32.7179|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:26:32.7179|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:26:41.1951|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:27:38.2896|20102|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (67ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DEBUG|2023-03-17 13:58:34.3348|0|Program|init main 
+INFO|2023-03-17 13:58:35.3034|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 13:58:35.3177|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 13:58:35.3177|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 13:58:35.3177|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 13:58:35.3177|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 13:59:36.7082|20102|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [a].[AccountId], [a].[Client], [a].[Name], [a].[OperationsManager]
 FROM [Accounts] AS [a] 
-ERROR|2023-03-17 12:27:38.3472|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+ERROR|2023-03-17 13:59:36.8195|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
    at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
@@ -128,7 +22,7 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:45e53283-ce4e-485c-9155-638a417ac39b
+ClientConnectionId:fc024308-b5fe-49c3-9a94-f276f1ac7d84
 Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
    at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
@@ -143,9 +37,9 @@ Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:45e53283-ce4e-485c-9155-638a417ac39b
+ClientConnectionId:fc024308-b5fe-49c3-9a94-f276f1ac7d84
 Error Number:207,State:1,Class:16
-ERROR|2023-03-17 12:27:38.4432|0|Challenge.DataAccess.Services.AccountsService|Invalid column name 'Client'. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
+ERROR|2023-03-17 13:59:36.9392|0|Challenge.DataAccess.Services.AccountsService|Invalid column name 'Client'. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
    at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
@@ -163,257 +57,145 @@ ERROR|2023-03-17 12:27:38.4432|0|Challenge.DataAccess.Services.AccountsService|I
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Challenge.DataAccess.Repository.Repositories.AccountsRepository.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\AccountsRepository.cs:line 25
    at Challenge.DataAccess.Services.AccountsService.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\AccountsService.cs:line 37
-ClientConnectionId:45e53283-ce4e-485c-9155-638a417ac39b
+ClientConnectionId:fc024308-b5fe-49c3-9a94-f276f1ac7d84
 Error Number:207,State:1,Class:16
-ERROR|2023-03-17 12:30:37.6001|20102|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT [a].[AccountId], [a].[Client], [a].[Name], [a].[OperationsManager]
-FROM [Accounts] AS [a] 
-ERROR|2023-03-17 12:30:37.6086|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+DEBUG|2023-03-17 14:02:56.5519|0|Program|init main 
+INFO|2023-03-17 14:02:57.8227|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:02:57.8389|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:02:57.8419|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:02:57.8419|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:02:57.8419|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 14:03:24.3301|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:2e07c77a-32fd-4a5d-a257-e833cbd21ab0
-Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:2e07c77a-32fd-4a5d-a257-e833cbd21ab0
-Error Number:207,State:1,Class:16
-ERROR|2023-03-17 12:30:37.7011|0|Challenge.DataAccess.Services.AccountsService|Invalid column name 'Client'. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ERROR|2023-03-17 14:03:24.5898|0|Challenge.DataAccess.Services.AccountsService|Unable to cast object of type 'System.Int32' to type 'System.String'. System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Challenge.DataAccess.Repository.Repositories.AccountsRepository.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\AccountsRepository.cs:line 25
    at Challenge.DataAccess.Services.AccountsService.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\AccountsService.cs:line 37
-ClientConnectionId:2e07c77a-32fd-4a5d-a257-e833cbd21ab0
-Error Number:207,State:1,Class:16
-ERROR|2023-03-17 12:30:47.7416|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:30:52.3742|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-DEBUG|2023-03-17 12:40:52.3598|0|Program|init main 
-INFO|2023-03-17 12:40:53.8296|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:40:53.8544|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:40:53.8585|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:40:53.8585|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:40:53.8585|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 12:41:09.1435|0|Program|init main 
-INFO|2023-03-17 12:41:10.3109|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:41:10.3389|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:41:10.3435|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:41:10.3435|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:41:10.3435|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:41:19.1476|0|Challenge.DataAccess.Services.TeamsService|The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<Challenge.DataAccess.Entities.Teams>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
-   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
-   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
-   at Challenge.DataAccess.Repository.Repositories.TeamsRepository.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\TeamsRepository.cs:line 27
-   at Challenge.DataAccess.Services.TeamsService.GetTeams() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\TeamsSercive.cs:line 37
-ERROR|2023-03-17 12:42:08.4771|20102|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT [a].[AccountId], [a].[Client], [a].[Name], [a].[OperationsManager]
-FROM [Accounts] AS [a] 
-ERROR|2023-03-17 12:42:08.5647|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+DEBUG|2023-03-17 14:03:36.2552|0|Program|init main 
+INFO|2023-03-17 14:03:37.5097|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:03:37.5320|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:03:37.5320|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:03:37.5320|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:03:37.5320|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 14:03:57.7728|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:92351cf2-cba7-468c-beba-c03212c30658
-Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:92351cf2-cba7-468c-beba-c03212c30658
-Error Number:207,State:1,Class:16
-ERROR|2023-03-17 12:42:08.6581|0|Challenge.DataAccess.Services.AccountsService|Invalid column name 'Client'. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ERROR|2023-03-17 14:03:58.0617|0|Challenge.DataAccess.Services.AccountsService|Unable to cast object of type 'System.Int32' to type 'System.String'. System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method15(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at Challenge.DataAccess.Repository.Repositories.AccountsRepository.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\AccountsRepository.cs:line 25
    at Challenge.DataAccess.Services.AccountsService.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\AccountsService.cs:line 37
-ClientConnectionId:92351cf2-cba7-468c-beba-c03212c30658
-Error Number:207,State:1,Class:16
-DEBUG|2023-03-17 12:47:57.6866|0|Program|init main 
-INFO|2023-03-17 12:47:58.8696|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:47:58.8909|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:47:58.8909|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:47:58.8909|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:47:58.8909|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 12:48:17.0398|0|Program|init main 
-INFO|2023-03-17 12:48:18.1420|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:48:18.1620|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:48:18.1620|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:48:18.1620|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:48:18.1620|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-ERROR|2023-03-17 12:48:27.5742|20102|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (83ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT [a].[AccountId], [a].[Client], [a].[Name], [a].[OperationsManager]
-FROM [Accounts] AS [a] 
-ERROR|2023-03-17 12:48:27.7895|10100|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Challenge.DataAccess.Repository.Context.ChallengeSystemContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+DEBUG|2023-03-17 14:04:53.5593|0|Program|init main 
+INFO|2023-03-17 14:04:54.8471|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:04:54.8620|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:04:54.8620|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:04:54.8620|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:04:54.8620|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+DEBUG|2023-03-17 14:40:13.6746|0|Program|init main 
+INFO|2023-03-17 14:40:14.8112|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:40:14.8234|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:40:14.8234|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:40:14.8234|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:40:14.8234|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+DEBUG|2023-03-17 14:44:54.1223|0|Program|init main 
+INFO|2023-03-17 14:44:54.8760|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:44:54.8942|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:44:54.8942|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:44:54.8942|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:44:54.8942|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 14:46:07.3115|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'Challenge.DataAccess.Services.Interfaces.ITeamsService' while attempting to activate 'Challenge.Controllers.TeamController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method224(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
 --- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+DEBUG|2023-03-17 14:47:07.5859|0|Program|init main 
+INFO|2023-03-17 14:47:08.4278|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:47:08.4399|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:47:08.4399|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:47:08.4399|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:47:08.4399|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 14:47:11.5121|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'Challenge.DataAccess.Services.Interfaces.ITeamsService' while attempting to activate 'Challenge.Controllers.TeamsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method11(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
 --- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:3cd243b0-2040-4de8-a229-aa6986b833c0
-Error Number:207,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+DEBUG|2023-03-17 14:52:18.4658|0|Program|init main 
+INFO|2023-03-17 14:52:19.3235|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:52:19.3358|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:52:19.3358|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:52:19.3358|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:52:19.3358|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 14:52:26.4955|1|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'Challenge.DataAccess.Services.Interfaces.ITeamsService' while attempting to activate 'Challenge.Controllers.TeamController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method11(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
 --- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:3cd243b0-2040-4de8-a229-aa6986b833c0
-Error Number:207,State:1,Class:16
-ERROR|2023-03-17 12:48:27.8971|0|Challenge.DataAccess.Services.AccountsService|Invalid column name 'Client'. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Client'.
-   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
-   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
-   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
---- End of stack trace from previous location ---
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
-   at Challenge.DataAccess.Repository.Repositories.AccountsRepository.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Repository\Repositories\AccountsRepository.cs:line 25
-   at Challenge.DataAccess.Services.AccountsService.GetAccounts() in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\AccountsService.cs:line 37
-ClientConnectionId:3cd243b0-2040-4de8-a229-aa6986b833c0
-Error Number:207,State:1,Class:16
-DEBUG|2023-03-17 12:59:00.9734|0|Program|init main 
-INFO|2023-03-17 12:59:02.0190|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 12:59:02.0426|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 12:59:02.0455|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 12:59:02.0455|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 12:59:02.0455|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:01:10.9826|0|Program|init main 
-INFO|2023-03-17 13:01:12.3391|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:01:12.3588|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:01:12.3588|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:01:12.3588|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:01:12.3588|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:02:31.9229|0|Program|init main 
-INFO|2023-03-17 13:02:33.0909|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:02:33.1113|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:02:33.1113|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:02:33.1113|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:02:33.1113|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:03:59.8129|0|Program|init main 
-INFO|2023-03-17 13:04:01.1466|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:04:01.1693|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:04:01.1693|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:04:01.1693|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:04:01.1693|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:19:09.6944|0|Program|init main 
-INFO|2023-03-17 13:19:11.0199|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:19:11.0439|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:19:11.0439|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:19:11.0439|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:19:11.0439|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:32:43.0457|0|Program|init main 
-INFO|2023-03-17 13:32:44.8734|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:32:44.8990|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:32:44.9039|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:32:44.9039|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:32:44.9039|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:37:18.0599|0|Program|init main 
-INFO|2023-03-17 13:37:19.1814|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:37:19.2372|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:37:19.2372|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:37:19.2372|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:37:19.2372|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
-DEBUG|2023-03-17 13:39:41.2498|0|Program|init main 
-INFO|2023-03-17 13:39:42.4528|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
-INFO|2023-03-17 13:39:42.4785|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
-INFO|2023-03-17 13:39:42.4826|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
-INFO|2023-03-17 13:39:42.4826|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
-INFO|2023-03-17 13:39:42.4826|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+DEBUG|2023-03-17 14:55:25.0570|0|Program|init main 
+INFO|2023-03-17 14:55:25.8205|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-17 14:55:25.8339|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-17 14:55:25.8339|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-17 14:55:25.8339|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-17 14:55:25.8339|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-17 15:56:22.0925|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-17 15:56:22.1788|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-17 15:56:24.0745|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-17 15:56:24.1101|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 

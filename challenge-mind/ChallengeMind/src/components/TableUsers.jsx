@@ -26,7 +26,7 @@ const muiCache = createCache({
 
 function TableUsers() {
     const navigate = useNavigate();
-    const { deleteUser, users, getUserData, getUsers, user } = useChallenge();
+    const { deleteUser, users, setUser, getUserData, getUsers, user } = useChallenge();
     const [responsive, setResponsive] = useState("standard");
     const [tableBodyHeight, setTableBodyHeight] = useState("400px");
     const [tableBodyMaxHeight, setTableBodyMaxHeight] = useState("");
@@ -130,6 +130,7 @@ function TableUsers() {
                     variant="contained"
                     color="primary"
                     onClick={() => {
+                        setUser('');
                         navigate('/dashboard/Users/EditAddUser');
                     }}
                     style={{ marginBottom: '10px' }}

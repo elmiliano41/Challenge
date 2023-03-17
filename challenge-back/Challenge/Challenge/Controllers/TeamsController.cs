@@ -6,9 +6,6 @@ using Challenge.DataAccess.DTO;
 using Microsoft.AspNetCore.Authorization;
 using Challenge.DataAccess.Repository.Context;
 using Challenge.DataAccess.Services.Interfaces;
-using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Challenge.Controllers
 {
@@ -24,7 +21,8 @@ namespace Challenge.Controllers
 
         public ILogger<TeamController> _logger;
 
-        public TeamController(ITeamsService teamService, ILogger<TeamController> logger, ChallengeSystemContext context)
+        public TeamController(ITeamsService teamService, ILogger<TeamController>
+            logger, ChallengeSystemContext context)
         {
             _teamService = teamService;
             _logger = logger;
@@ -33,11 +31,11 @@ namespace Challenge.Controllers
 
         [HttpGet]
         [Route("/Team")]
-        public async Task<ActionResult<Teams>> GetTeam(int id)
+        public async Task<ActionResult<Teams>> GetTeam(int teamId)
         {
             try
             {
-                var team = await _teamService.GetTeam(id);
+                var team = await _teamService.GetTeam(teamId);
                 if (team == null)
                 {
                     return NoContent();
@@ -75,8 +73,8 @@ namespace Challenge.Controllers
         {
             try
             {
-                var newTeam = await _teamService.PostTeam(team);
-                return Ok(newTeam);
+                var createdTeam = await _teamService.PostTeam(team);
+                return Ok(createdTeam);
             }
             catch (Exception ex)
             {
@@ -127,4 +125,3 @@ namespace Challenge.Controllers
         }
     }
 }
-

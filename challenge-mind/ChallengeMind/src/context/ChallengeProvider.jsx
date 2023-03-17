@@ -158,7 +158,7 @@ const ChallengeProvider = ({ children }) => {
         try {
             const config = getConfig();
             if (!config) return;
-            const { data } = await AxiosClient.get(`/Team/?Id=${id}`, config);
+            const { data } = await AxiosClient.get(`/Team/?teamId=${id}`, config);
             setTeam(data);
             navigate("/dashboard/Teams/EditAddTeams");
             setAlert({});
@@ -241,6 +241,94 @@ const ChallengeProvider = ({ children }) => {
             console.log(error);
         }
     };
+    const getAccount = async (id) => {
+        try {
+            const config = getConfig();
+            if (!config) return;
+            const { data } = await AxiosClient.get(`/Account/?accountId=${id}`, config);
+            setAccount(data);
+            navigate("/dashboard/Accounts/EditAddAccounts");
+            setAlert({});
+        } catch (error) {
+            navigate("/dashboard");
+            setAlert({
+                msg: error.response.data.msg,
+                error: true,
+            });
+        }
+    };
+    
+    const getAccounts = async () => {
+        try {
+            const config = getConfig();
+            if (!config) return;
+            const { data } = await AxiosClient.get("/Accounts", config);
+            setAccounts(data);
+            setAlert({});
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    
+    const submitAccount = async (account) => {
+        if (account.accountId) {
+            await updateAccount(account);
+        } else {
+            await newAccount(account);
+        }
+    };
+    
+    const newAccount = async (account) => {
+        try {
+            const config = getConfig();
+            if (!config) return;
+            const { data } = await AxiosClient.post("/Account", account, config);
+            setAlert({
+                msg: "Account created",
+                error: false,
+            });
+            setAlert({});
+            getAccounts();
+            navigate("/dashboard/Accounts");
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    
+    const updateAccount = async (account) => {
+        try {
+            const config = getConfig();
+            if (!config) return;
+            const { data } = await AxiosClient.put(`/Account`, account, config);
+            setAlert({
+                msg: "Account updated",
+                error: false,
+            });
+            setAlert({});
+            getAccounts();
+            navigate("/dashboard/Accounts");
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    
+    const deleteAccount = async (account) => {
+        try {
+            const config = getConfig();
+            if (!config) return;
+            const { data } = await AxiosClient.delete(`/Account/?accountId=${account}`, config);
+            setAlert({
+                msg: data.msg,
+                error: false,
+            });
+            setAlert({});
+            getAccounts();
+            navigate("/dashboard/Accounts");
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    
     return (
         <ChallengeContext.Provider
             value={{
@@ -261,6 +349,14 @@ const ChallengeProvider = ({ children }) => {
                 getTeams,
                 submitTeam,
                 deleteTeam,
+                account,
+                setAccount,
+                getAccount,
+                accounts,
+                setAccounts,
+                getAccounts,
+                submitAccount,
+                deleteAccount,
                 alerta,
                 showAlert,
                 closeSession,

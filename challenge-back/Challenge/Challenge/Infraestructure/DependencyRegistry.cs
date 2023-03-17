@@ -4,6 +4,7 @@ using Challenge.DataAccess.Repository.Repositories;
 using Challenge.DataAccess.Services;
 using Challenge.Utils.Interfaces;
 using Challenge.Utils.Security;
+using Curso_Java_a_.net.DataAccess.Repository.Repositories;
 
 namespace Challenge.Infraestructure
 {

@@ -9,13 +9,16 @@ import { Dashboard } from './pages/Dashboard';
 import { Profile } from './pages/Profile';
 import { Users } from './pages/Users';
 import EditAddUser from './pages/EditAddUser';
+import EditAddTeams from './pages/EditAddTeams';
 import Teams from './pages/Teams';
+import { Accounts } from './pages/Accounts';
+import EditAddAccount from './pages/EditAddAccount';
 
 function App() {
   return (
     <div
       style={{
-        backgroundImage: `url("https://source.unsplash.com/random")`,
+        backgroundImage: `url("https://www.xtrafondos.com/wallpapers/ciudad-al-atardecer-5052.jpg")`,
       }}
       className="App"
     >
@@ -47,7 +50,14 @@ function App() {
                 element={<ProtectedRoutes adminOnly={true} />}
               >
                 <Route index element={<Teams />} />
-                {/* <Route path='/dashboard/Teams/EditAddTeams' element={<EditAddTeams />} /> */}
+                <Route path='/dashboard/Teams/EditAddTeams' element={<EditAddTeams />} />
+              </Route>
+              <Route
+                path="/dashboard/Accounts"
+                element={<ProtectedRoutes adminOnly={true} />}
+              >
+                <Route index element={<Accounts />} />
+                <Route path='/dashboard/Accounts/EditAddAccounts' element={<EditAddAccount />} />
               </Route>
             </Routes>
           </ChallengeProvider>
@@ -58,4 +68,3 @@ function App() {
 }
 
 export default App;
-

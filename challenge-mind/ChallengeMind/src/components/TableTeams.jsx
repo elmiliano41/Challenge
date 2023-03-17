@@ -23,7 +23,7 @@ const muiCache = createCache({
 
 function TableTeams() {
     const navigate = useNavigate();
-    const { deleteTeam, teams, getTeamData, getTeams } = useChallenge();
+    const { deleteTeam, teams, setTeam,getTeam, getTeams } = useChallenge();
     const [responsive, setResponsive] = useState("standard");
     const [tableBodyHeight, setTableBodyHeight] = useState("400px");
     const [tableBodyMaxHeight, setTableBodyMaxHeight] = useState("");
@@ -63,7 +63,7 @@ function TableTeams() {
             name: "name",
             options: { filterOptions: { fullWidth: true } },
         },
-        { label: "Description", name: "description" },
+        { label: "Account Assigned", name: "accountId" },
         {
             label: "Edit",
             name: "teamId",
@@ -73,7 +73,7 @@ function TableTeams() {
                     return (
                         <EditIcon style={{ cursor: 'pointer' }}
                             onClick={() => {
-                                getTeamData(value);
+                                getTeam(value);
                             }}
                         />
                     );
@@ -124,7 +124,8 @@ function TableTeams() {
                     variant="contained"
                     color="primary"
                     onClick={() => {
-                        navigate('/dashboard/Teams/EditAddTeam');
+                        setTeam('');
+                        navigate('/dashboard/Teams/EditAddTeams');
                     }}
                     style={{ marginBottom: '10px' }}
                 >
