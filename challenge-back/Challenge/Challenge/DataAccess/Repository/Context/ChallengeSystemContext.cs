@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Challenge.DataAccess.Entities;
+using NLog.Fluent;
 
 namespace Challenge.DataAccess.Repository.Context
 {
@@ -16,9 +17,10 @@ namespace Challenge.DataAccess.Repository.Context
         {
         }
         public DbSet<Sessions> Sessions { get; set; }
-        //public DbSet<Movements> Movements { get; set; }
+        //public DbSet<Movement> Movements { get; set; }
         public DbSet<Users> Users { get; set; }
         public DbSet<Accounts> Accounts { get; set; }
+        public DbSet<Teams> Teams { get; set; }
 
         public static ChallengeSystemContext Create()
         {

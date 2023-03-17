@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "hmtcwR59PScdTjW9UiyFxCxA+VGBVOqG5AUtqr345TU5BKpujza/f0+1ibZN0XOZsFvy3zLMkMh4eQu5g7uXqA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge.UnitTest\\Challenge.UnitTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elmil\\.nuget\\packages\\moq\\4.16.1\\moq.4.16.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Moq 4.16.1 is not compatible with net40 (.NETFramework,Version=v4.0). Package Moq 4.16.1 supports:\r\n  - net45 (.NETFramework,Version=v4.5)\r\n  - netstandard2.0 (.NETStandard,Version=v2.0)\r\n  - netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Moq",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Challenge is not compatible with net40 (.NETFramework,Version=v4.0). Project Challenge supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Challenge",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.0"
+      ]
+    }
+  ]
+}

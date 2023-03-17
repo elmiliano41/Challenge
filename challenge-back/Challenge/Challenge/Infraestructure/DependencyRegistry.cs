@@ -14,12 +14,14 @@ namespace Challenge.Infraestructure
             #region Services
             builder.Services.AddScoped<ISessionService, SessionService>();
             builder.Services.AddScoped<IUsersService, UsersService>();
+            builder.Services.AddScoped<ITeamsService, TeamsService>();
             builder.Services.AddScoped<IAccountsService, AccountsService>();
             #endregion
 
             #region Repositories
             builder.Services.AddScoped<ISessionRepository, SessionRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<ITeamsRepository, TeamsRepository>();
             builder.Services.AddScoped<IAccountsRepository, AccountsRepository>();
             #endregion
 
