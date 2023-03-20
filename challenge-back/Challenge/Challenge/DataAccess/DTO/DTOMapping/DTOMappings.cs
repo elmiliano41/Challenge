@@ -25,9 +25,17 @@ namespace Challenge.DataAccess.DTO.DTOMapping
     {
         AccountId = accounts.AccountId,
         Name = accounts.Name,
-        Client = accounts.Client,
-        OperationsManager = accounts.OperationsManager
+        ClientName = accounts.ClientName,
+        OperationsManager = accounts.OperationsManager,
+        CreatedDate= accounts.CreatedDate,
     };
+        public static Teams Map(this TeamsDTO teams) =>
+new Teams
+{
+TeamId = teams.TeamId,
+Name = teams.Name,
+AccountId = teams.AccountId,
+};
     }
 
     #endregion

@@ -78,7 +78,7 @@ namespace Challenge.Controllers
             catch (Exception ex)
             {
                 if (ex.Message.ToLower().Contains("duplicate"))
-                    return BadRequest("User already exist");
+                    return BadRequest("This email already exist");
                 else
                     return Problem("Some error happened please contact Sys Admin");
             }
@@ -90,6 +90,7 @@ namespace Challenge.Controllers
         {
             try
             {
+                
                 var userUpdated = await _userService.UpdateUsers(user);
                 if (userUpdated == null)
                 {

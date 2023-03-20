@@ -66,7 +66,7 @@ namespace Challenge.Controllers
                 }
                 catch (UnauthorizedAccessException)
                 {
-                    return Unauthorized("Email and password does not match");
+                    return Unauthorized("Email or password does not match");
                 }
                 catch (Exception)
                 {

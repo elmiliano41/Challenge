@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.0": {
+      "Moq/4.16.1": {
+        "type": "package"
+      },
+      "Challenge/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Challenge.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Challenge.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Moq/4.16.1": {
+      "sha512": "bw3R9q8cVNhWXNpnvWb0OGP4HadS4zvClq+T1zf7AF+tLY1haZ2AvbHidQekf4PDv1T40c6brZeT/V0IBq7cEQ==",
+      "type": "package",
+      "path": "moq/4.16.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Moq.dll",
+        "lib/net45/Moq.xml",
+        "lib/netstandard2.0/Moq.dll",
+        "lib/netstandard2.0/Moq.xml",
+        "lib/netstandard2.1/Moq.dll",
+        "lib/netstandard2.1/Moq.xml",
+        "moq.4.16.1.nupkg.sha512",
+        "moq.nuspec",
+        "moq.png"
+      ]
+    },
+    "Challenge/1.0.0": {
+      "type": "project",
+      "path": "../Challenge/Challenge.csproj",
+      "msbuildProject": "../Challenge/Challenge.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.0": [
+      "Challenge >= 1.0.0",
+      "Moq >= 4.16.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\elmil\\.nuget\\packages\\": {},
+    "D:\\Archivos de programas(x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge.UnitTest\\Challenge.UnitTest.csproj",
+      "projectName": "Challenge.UnitTest",
+      "projectPath": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge.UnitTest\\Challenge.UnitTest.csproj",
+      "packagesPath": "C:\\Users\\elmil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge.UnitTest\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Archivos de programas(x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\elmil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net40": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\Challenge.csproj": {
+              "projectPath": "C:\\Users\\elmil\\Documents\\ChallengeMind\\challenge-back\\Challenge\\Challenge\\Challenge.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net40": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Moq": {
+            "target": "Package",
+            "version": "[4.16.1, )"
+          }
+        }
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Moq 4.16.1 is not compatible with net40 (.NETFramework,Version=v4.0). Package Moq 4.16.1 supports:\r\n  - net45 (.NETFramework,Version=v4.5)\r\n  - netstandard2.0 (.NETStandard,Version=v2.0)\r\n  - netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Moq",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Challenge is not compatible with net40 (.NETFramework,Version=v4.0). Project Challenge supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Challenge",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.0"
+      ]
+    }
+  ]
+}

@@ -8,7 +8,8 @@ namespace Challenge.DataAccess.Entities
         [Key]
         public int AccountId { get; set; }
         public string Name { get; set; }
-        public string Client { get; set; }
-        public string OperationsManager { get; set; }
+        public string ClientName { get; set; }
+        public int OperationsManager { get; set; }
+        public DateTime CreatedDate { get; set; }= DateTime.UtcNow;
     }
 }

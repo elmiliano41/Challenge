@@ -19,6 +19,7 @@ namespace Challenge.DataAccess.Repository.Context
         //public DbSet<Movements> Movements { get; set; }
         public DbSet<Users> Users { get; set; }
         public DbSet<Accounts> Accounts { get; set; }
+        public DbSet<Teams> Teams { get; set; }
 
         public static ChallengeSystemContext Create()
         {

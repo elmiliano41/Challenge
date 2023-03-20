@@ -1,0 +1,12 @@
+DEBUG|2023-03-16 01:49:55.5914|0|Program|init main 
+INFO|2023-03-16 01:49:56.9825|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-16 01:49:57.0076|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-16 01:49:57.0076|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-16 01:49:57.0076|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-16 01:49:57.0076|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+DEBUG|2023-03-16 13:07:44.4719|0|Program|init main 
+INFO|2023-03-16 13:07:45.6482|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-16 13:07:45.6791|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-16 13:07:45.6791|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-16 13:07:45.6791|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-16 13:07:45.6791|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 

@@ -1,0 +1,87 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  margin: 0%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+/* Colores */
+:root {
+  /* Colores primarios */
+  --color-primary: #800020;
+  --color-primary-dark: #4d001a;
+  --color-primary-light: #b3666a;  
+  
+  /* Colores secundarios */
+  --color-secondary: #FFC107;
+  --color-secondary-dark: #FFA000;
+  --color-secondary-light: #FFE082;
+  
+  /* Colores neutrales */
+  --color-text: #333;
+  --color-bg: #F2F2F2;
+  --color-border: #DDD;
+}
+
+/* Estilos de botones */
+button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+.App {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat;
+}
+
+@keyframes temblor {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    transform: translate(2px, 2px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-2px, -2px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(-2px, 2px) rotate(1deg);
+  }
+  100% {
+    transform: translate(2px, -2px) rotate(-1deg);
+  }
+}
+
+.errors{
+  color: red;
+  animation: temblor 0.1s 2 ;
+}

@@ -409,3 +409,8 @@ C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\bin\De
 C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\obj\Debug\net6.0\staticwebassets\msbuild.Challenge.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\obj\Debug\net6.0\staticwebassets\msbuild.build.Challenge.props
+C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Challenge.props
+C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Challenge.props
+C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\obj\Debug\net6.0\staticwebassets.pack.json

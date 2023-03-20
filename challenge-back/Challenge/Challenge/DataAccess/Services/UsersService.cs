@@ -22,7 +22,8 @@ namespace Challenge.DataAccess.Services
             try
             {
                 Users user = await _usersRepository.GetUserByUserAndPassword(email, pass);
-                if (email == null)
+                if (user == null)
+
                 {
                     throw new UnauthorizedAccessException();
                 }
