@@ -28,7 +28,7 @@ function TableUsers() {
     const navigate = useNavigate();
     const { deleteUser, users, setUser, getUserData, getUsers, user } = useChallenge();
     const [responsive, setResponsive] = useState("standard");
-    const [tableBodyHeight, setTableBodyHeight] = useState("400px");
+    const [tableBodyHeight, setTableBodyHeight] = useState("600px");
     const [tableBodyMaxHeight, setTableBodyMaxHeight] = useState("");
     const [searchBtn, setSearchBtn] = useState(true);
     const [downloadBtn, setDownloadBtn] = useState(true);

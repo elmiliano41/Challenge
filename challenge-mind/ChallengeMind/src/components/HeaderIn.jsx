@@ -57,7 +57,7 @@ function HeaderIn() {
                   <li><Link replace={true} to="/dashboard/Users">Users</Link></li>
                   <li><Link replace={true} to="/dashboard/Teams">Teams</Link></li>
                   <li><Link replace={true} to="/dashboard/Accounts">Accounts</Link></li>                </>
-              ) : (() => { })}
+              ) : <div></div>}
             </ul>
           )}
         </div>

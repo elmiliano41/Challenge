@@ -1,0 +1,16 @@
+ERROR|2023-03-20 00:00:03.8038|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass)
+ERROR|2023-03-20 00:25:52.3161|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass)
+ERROR|2023-03-20 00:26:16.7220|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass)
+ERROR|2023-03-20 04:54:45.2922|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass)
+ERROR|2023-03-20 04:54:51.4391|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass)
+DEBUG|2023-03-20 15:16:42.4875|0|Program|init main 
+INFO|2023-03-20 15:16:43.3984|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-20 15:16:43.4107|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-20 15:16:43.4107|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-20 15:16:43.4107|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-20 15:16:43.4107|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 

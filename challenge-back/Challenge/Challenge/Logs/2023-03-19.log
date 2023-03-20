@@ -1,0 +1,78 @@
+DEBUG|2023-03-19 17:13:42.3385|0|Program|init main 
+INFO|2023-03-19 17:13:43.8085|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-19 17:13:43.8251|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-19 17:13:43.8251|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-19 17:13:43.8251|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-19 17:13:43.8251|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-19 17:27:21.2405|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 17:27:21.3330|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 17:30:41.7025|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 17:30:41.7354|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 21:24:56.6261|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 21:24:56.6574|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 21:25:07.9942|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 21:25:08.0268|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 21:25:56.8805|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 21:25:56.9099|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 22:43:00.4530|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 22:43:00.4941|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 22:45:18.9575|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 22:45:18.9891|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+ERROR|2023-03-19 22:46:24.5711|0|Challenge.DataAccess.Services.UsersService|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Challenge.DataAccess.Services.SessionService.SaveSession(Users user) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\SessionService.cs:line 44
+ERROR|2023-03-19 22:46:24.6024|0|Challenge.Controllers.SecurityController|Some error happened please contact Sys Admin 
+DEBUG|2023-03-19 22:56:23.9001|0|Program|init main 
+INFO|2023-03-19 22:56:24.8282|14|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7042 
+INFO|2023-03-19 22:56:24.8401|14|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5042 
+INFO|2023-03-19 22:56:24.8401|0|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+INFO|2023-03-19 22:56:24.8401|0|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+INFO|2023-03-19 22:56:24.8401|0|Microsoft.Hosting.Lifetime|Content root path: C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\ 
+ERROR|2023-03-19 22:56:44.3874|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 22:56:44.7593|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 22:57:12.9667|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 22:58:32.9972|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 22:58:47.8802|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 22:59:08.6080|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:04:56.7046|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:06:09.1418|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:06:17.9904|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:24:54.5235|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:24:56.6607|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:25:01.1338|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:25:49.9705|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:25:50.7346|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:26:14.0536|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:26:18.7365|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:26:24.7437|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:27:23.1156|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:28:57.5486|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:30:44.4832|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-19 23:59:04.7773|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27

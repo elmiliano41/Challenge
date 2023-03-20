@@ -10,9 +10,10 @@ const ChallengeProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
     const [team, setTeam] = useState({});
     const [teams, setTeams] = useState([]);
+    const [teamName, setTeamName]= useState({})
     const [account, setAccount] = useState({});
     const [accounts, setAccounts] = useState({});
-    const [alerta, setAlert] = useState({});
+    const [alert, setAlert] = useState({});
     const navigate = useNavigate();
     const { auth } = useAuth();
 
@@ -171,6 +172,22 @@ const ChallengeProvider = ({ children }) => {
         }
     };
 
+    const getTeamName = async (id) => {
+        try {
+            const config = getConfig();
+            if (!config) return;
+            const { data } = await AxiosClient.get(`/Team/?teamId=${id}`, config);
+            setTeamName(data);
+            setAlert({});
+        } catch (error) {
+            navigate("/dashboard");
+            setAlert({
+                msg: error.response.data.msg,
+                error: true,
+            });
+        }
+    };
+
     const getTeams = async () => {
         try {
             const config = getConfig();
@@ -249,6 +266,7 @@ const ChallengeProvider = ({ children }) => {
             setAccount(data);
             navigate("/dashboard/Accounts/EditAddAccounts");
             setAlert({});
+            console.log(data);
         } catch (error) {
             navigate("/dashboard");
             setAlert({
@@ -344,6 +362,8 @@ const ChallengeProvider = ({ children }) => {
                 team,
                 setTeam,
                 getTeam,
+                getTeamName,
+                teamName,
                 teams,
                 setTeams,
                 getTeams,
@@ -357,7 +377,7 @@ const ChallengeProvider = ({ children }) => {
                 getAccounts,
                 submitAccount,
                 deleteAccount,
-                alerta,
+                alert,
                 showAlert,
                 closeSession,
             }}

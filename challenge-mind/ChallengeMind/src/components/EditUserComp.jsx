@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -7,11 +7,18 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import FormControl from '@mui/material/FormControl';
 import Checkbox from '@mui/material/Checkbox';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import '../Styles/ProfileStyles.css'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import '../Styles/ProfileStyles.css';
+import MUIDataTable from "mui-datatables";
+import { ThemeProvider } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
+import CheckIcon from '@mui/icons-material/Check';
+import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
 import useChallenge from '../hooks/useChallenge';
 import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
@@ -19,16 +26,94 @@ import { useFormik } from 'formik';
 import useAuth from '../hooks/useAuth';
 import { FormControlLabel } from '@mui/material';
 
+
+const muiCache = createCache({
+    key: "mui-datatables",
+    prepend: true,
+});
+
 const theme = createTheme();
 
 export default function EditUserComp() {
-    const navigate = useNavigate();
-    const { getUser, user, submitUser } = useChallenge();
-    const { auth } = useAuth();
-    const validationSchema = yup.object({
-        cv: yup.string().url('Invalid URL'),
-    });
+    const [responsive, setResponsive] = useState("standard");
+    const [tableBodyHeight, setTableBodyHeight] = useState("400px");
+    const [tableBodyMaxHeight, setTableBodyMaxHeight] = useState("");
+    const [searchBtn, setSearchBtn] = useState(true);
+    const [downloadBtn, setDownloadBtn] = useState(true);
+    const [printBtn, setPrintBtn] = useState(true);
+    const [viewColumnBtn, setViewColumnBtn] = useState(true);
+    const [filterBtn, setFilterBtn] = useState(true);
+    const [showConfirmation, setShowConfirmation] = useState(false);
+    const [selectedTeam, setSelectedTeam] = useState({});
 
+    const navigate = useNavigate();
+    const { getUser, user, submitUser,getTeams, teams } = useChallenge();
+    const { auth } = useAuth();
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const handleTeamSelect = (selectedTeamId) => {
+        formik.setFieldValue("teamId", selectedTeamId);
+        handleClose();
+    };
+
+    const columns = [
+        {
+            label: "Name",
+            name: "name",
+            options: { filterOptions: { fullWidth: true } },
+        },
+        { label: "Account Assigned", name: "accountId" },
+        {
+            label: "Select",
+            name: "teamId",
+            options: {
+                filter: true,
+                customBodyRender: (team, tableMeta, updateValue) => {
+                    return (
+                        <CheckIcon style={{ cursor: 'pointer' }}
+                            onClick={async () =>
+                                handleTeamSelect(team)
+                            }
+                        />
+                    );
+                },
+            },
+        },
+    ];
+
+    const options = {
+        search: searchBtn,
+        download: downloadBtn,
+        print: printBtn,
+        viewColumns: viewColumnBtn,
+        filter: filterBtn,
+        filterType: "dropdown",
+        responsive,
+        tableBodyHeight,
+        tableBodyMaxHeight,
+        onTableChange: (action, state) => {
+            console.log(action);
+        },
+        selectableRows: 'none',
+    };
+
+    useEffect(() => {
+        getTeams();
+    }, []);
+
+    const validationSchema = yup.object({
+        name: yup.string().required('Name is required'),
+        email: yup.string().email('Invalid email address').required('Email is required'),
+        password: yup.string().min(8, 'Password must be at least 8 characters').required('Password is required'),
+        englishLevelId: yup.string().required('English Level is required'),
+        technicalKnowledge: yup.string().required('Technical Knowledge is required'),
+        cv: yup.string().url('Invalid URL'),
+        teamId: yup.string().required('Team is required'),
+    });
+    
     const formik = useFormik({
         initialValues: {
             userId: '',
@@ -38,14 +123,25 @@ export default function EditUserComp() {
             englishLevelId: '',
             technicalKnowledge: '',
             cv: '',
+            isSU:false,
             isAdmin: false,
             teamId: '',
         },
         validationSchema,
         onSubmit: (values) => {
+            console.log('Form values: ', values); 
             submitUser(values);
         },
     });
+
+    useEffect(() => {
+        if (formik.values.teamId) {
+            const teamSelected = teams.find((team) => team.teamId === formik.values.teamId);
+            setSelectedTeam(teamSelected);
+        } else {
+            setSelectedTeam({});
+        }
+    }, [formik.values.teamId, teams]);
 
     useEffect(() => {
         formik.setValues({
@@ -55,9 +151,10 @@ export default function EditUserComp() {
             password: user.password || '',
             englishLevelId: user.englishLevelId || '',
             technicalKnowledge: user.technicalKnowledge || '',
+            isSU: user.isSU||false,
             cv: user.cv || '',
             isAdmin: user.isAdmin || false,
-            teamId: user.teamId || 1,
+            teamId: user.teamId || 1 || selectedTeam,
         });
     }, [user]);
 
@@ -84,6 +181,8 @@ export default function EditUserComp() {
                             label="Name"
                             onChange={formik.handleChange}
                             value={formik.values.name || ''}
+                            error={formik.touched.name && Boolean(formik.errors.name)}
+                            helperText={formik.touched.name && formik.errors.name}
                             style={{ marginBottom: theme.spacing(2) }} />
                         <TextField
                             fullWidth
@@ -91,6 +190,8 @@ export default function EditUserComp() {
                             onChange={formik.handleChange}
                             label="Email Address"
                             value={formik.values.email || ''}
+                            error={formik.touched.email && Boolean(formik.errors.email)}
+                            helperText={formik.touched.email && formik.errors.email}
                             style={{ marginBottom: theme.spacing(2) }} />
                         <FormControl fullWidth variant="outlined" style={{ marginBottom: theme.spacing(2) }}>
                             <InputLabel id="englishLevel-label">English Level</InputLabel>
@@ -110,9 +211,6 @@ export default function EditUserComp() {
                                 <MenuItem value={5}>C1</MenuItem>
                                 <MenuItem value={6}>C2</MenuItem>
                             </Select>
-                            {formik.touched.englishLevelId && formik.errors.englishLevelId ? (
-                                <FormHelperText error>{formik.errors.englishLevelId}</FormHelperText>
-                            ) : null}
                         </FormControl>
                         <TextField
                             fullWidth
@@ -148,6 +246,17 @@ export default function EditUserComp() {
                             helperText={formik.touched.password && formik.errors.password}
                             style={{ marginBottom: theme.spacing(2) }}
                         />
+                        <TextField
+                            fullWidth
+                            id="teamId"
+                            name="teamId"
+                            disabled
+                            value={selectedTeam ? selectedTeam.name : ''}
+                            onChange={formik.handleChange}
+                            error={formik.touched.teamId && Boolean(formik.errors.teamId)}
+                            helperText={formik.touched.teamId && formik.errors.teamId}
+                            style={{ marginBottom: theme.spacing(2) }}
+                        />
                         {auth.isSU == true ? (
                             <FormControl fullWidth style={{ marginBottom: theme.spacing(2), textAlign: 'center' }}>
                                 <FormControlLabel
@@ -162,13 +271,63 @@ export default function EditUserComp() {
                                     label="Is Admin"
                                 />
                             </FormControl>
-                        ) : (() => { })}
-                        <Button fullWidth variant="contained" style={{ marginTop: theme.spacing(2), marginBottom: theme.spacing(1) }}>
-                            Choose Team
+                        ) : <div></div>}
+                        <Button
+                            onClick={handleOpen}
+                            fullWidth
+                            variant="outlined"
+                            style={{
+                                marginTop: theme.spacing(2),
+                                marginBottom: theme.spacing(1),
+                            }}
+                        >
+                            Choose team
                         </Button>
                         <Button type="submit" fullWidth variant="contained" style={{ marginTop: theme.spacing(2), marginBottom: theme.spacing(1) }}>
                             Save Changes
                         </Button>
+                        <Modal
+                            open={open}
+                            onClose={handleClose}
+                            aria-labelledby="modal-title"
+                            aria-describedby="modal-description"
+                        >
+                            <Box
+                                sx={{
+                                    position: 'absolute',
+                                    top: '50%',
+                                    left: '50%',
+                                    transform: 'translate(-50%, -50%)',
+                                    width: '80%',
+                                    bgcolor: 'background.paper',
+                                    boxShadow: 24,
+                                    p: 4,
+                                }}
+                            >
+                                <Typography id="modal-title" variant="h6" component="h2">
+                                    Select a team
+                                </Typography>
+                                <div id="modal-description">
+                                    <div className="users-form">
+                                        <h1 className="teams-title"></h1>
+                                        {typeof teams.length === 'undefined' ? (
+                                            <h1> No found teams </h1>
+                                        ) : (
+                                            <CacheProvider value={muiCache}>
+                                                <ThemeProvider theme={createTheme()}>
+                                                    <MUIDataTable
+                                                        title={'Teams list'}
+                                                        data={teams}
+                                                        columns={columns}
+                                                        options={options}
+                                                    />
+                                                </ThemeProvider>
+                                            </CacheProvider>
+                                        )}
+                                    </div>
+                                </div>
+                            </Box>
+                        </Modal>
                     </form>
                 </div>
             </Container>
