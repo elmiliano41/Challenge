@@ -1,0 +1,10 @@
+ERROR|2023-03-21 00:04:50.6316|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-21 00:32:06.7184|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-21 00:32:12.6232|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-21 00:32:16.1264|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27
+ERROR|2023-03-21 01:54:42.8630|0|Challenge.DataAccess.Services.UsersService|Attempted to perform an unauthorized operation. System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at Challenge.DataAccess.Services.UsersService.GetUserByUserAndPassword(String email, String pass) in C:\Users\elmil\Documents\ChallengeMind\challenge-back\Challenge\Challenge\DataAccess\Services\UsersService.cs:line 27

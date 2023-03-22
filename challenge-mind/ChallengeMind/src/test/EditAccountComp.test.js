@@ -1,69 +1,93 @@
-import { act } from 'react-dom/test-utils';
-import { render, screen, fireEvent } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import '@testing-library/jest-dom/extend-expect';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter } from 'react-router-dom';
-import AuthContext from '../context/AuthProvider';
-import EditAccountComp from '../components/EditAccountComp';
 import React from 'react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import EditAccountComp from './EditAccountComp';
 
-describe('EditAccountComp', () => {
-    it('renders the form correctly', async () => {
-      const { getByLabelText, getByText, getByRole } = render(
-        <BrowserRouter>
-          <EditAccountComp />
-        </BrowserRouter>
-      );
-  
-      expect(getByLabelText('Name')).toBeInTheDocument();
-      expect(getByLabelText('Client Name')).toBeInTheDocument();
-      expect(getByRole('button', { name: 'Choose user' })).toBeInTheDocument();
-      expect(getByRole('button', { name: 'Save Changes' })).toBeInTheDocument();
-    });
-  
-    it('handles form submission with valid data', async () => {
-      const { getByLabelText, getByRole } = render(
-        <ThemeProvider theme={createTheme()}>
-          <AuthContext.Provider value={{ setAuth: jest.fn() }}>
-            <BrowserRouter>
-              <EditAccountComp />
-            </BrowserRouter>
-          </AuthContext.Provider>
-        </ThemeProvider>
-      );
-  
-      await act(async () => {
-        userEvent.type(getByLabelText('Name'), 'Test Account');
-        userEvent.type(getByLabelText('Client Name'), 'Test Client');
-        fireEvent.click(getByRole('button', { name: 'Choose user' }));
-        await screen.findByText('Accounts list');
-        fireEvent.click(screen.getByRole('checkbox'));
-        fireEvent.click(screen.getByRole('button', { name: 'OK' }));
-        fireEvent.click(getByRole('button', { name: 'Save Changes' }));
-      });
-  
-      expect(screen.getByText('Select user')).not.toBeInTheDocument();
-    });
-  
-    it('displays an error message for missing required fields', async () => {
-      const { getByLabelText, getByRole, findByText } = render(
-        <ThemeProvider theme={createTheme()}>
-          <AuthContext.Provider value={{ setAuth: jest.fn() }}>
-            <BrowserRouter>
-              <EditAccountComp />
-            </BrowserRouter>
-          </AuthContext.Provider>
-        </ThemeProvider>
-      );
-  
-      await act(async () => {
-        fireEvent.click(getByRole('button', { name: 'Save Changes' }));
-      });
-  
-      expect(await findByText('Account name is required')).toBeInTheDocument();
-      expect(await findByText('Client name  is required')).toBeInTheDocument();
-      expect(await findByText('Choose an manager')).toBeInTheDocument();
+jest.mock('../hooks/useChallenge', () => ({
+  __esModule: true,
+  default: () => ({
+    getUsers: jest.fn(),
+    submitAccount: jest.fn(),
+    account: {
+      "accountId": 1,
+      "name": "testing",
+      "clientName": "testAccounts",
+      "operationsManager": 2,
+      "createdDate": "2023-02-21T16:31:35.972Z"
+    },
+    users: [  {
+      "userId": 2,
+      "name": "test",
+      "email": "test@test.com",
+      "password": "testing123",
+      "cv": "https://jestjs.io/es-ES/docs/next/getting-started",
+      "technicalKnowledge": "C# and React",
+      "isAdmin": true,
+      "isSU": false,
+      "englishLevelId": 1,
+      "teamId": 2
+    },{
+      "userId": 3,
+      "name": "testeo",
+      "email": "tester@test.com",
+      "password": "testing123",
+      "cv": "https://jestjs.io/es-ES/docs/next/getting-started",
+      "technicalKnowledge": "C# and React",
+      "isAdmin": false,
+      "isSU": false,
+      "englishLevelId": 5,
+      "teamId": 1
+    }
+  ],
+  }),
+}));
+
+test('renders EditAccountComp', () => {
+  render(<EditAccountComp />);
+  expect(screen.getByText('Account')).toBeInTheDocument();
+});
+
+test('allows user to fill input fields', async () => {
+  render(<EditAccountComp />);
+  const nameInput = screen.getByTestId('name');
+  const clientNameInput = screen.getByTestId('clientName');
+
+  userEvent.type(nameInput, 'Account Name');
+  userEvent.type(clientNameInput, 'Client Name');
+
+  expect(nameInput).toHaveValue('Account Name');
+  expect(clientNameInput).toHaveValue('Client Name');
+});
+
+test('opens modal when "Choose user" button is clicked', async () => {
+  render(<EditAccountComp />);
+  const chooseUserButton = screen.getByText('Choose user');
+
+  fireEvent.click(chooseUserButton);
+
+  await waitFor(() => {
+    expect(screen.getByText('Select user')).toBeInTheDocument();
+  });
+});
+
+test('submits the form correctly', async () => {
+  const { submitAccount } = require('../hooks/useChallenge');
+  render(<EditAccountComp />);
+  const nameInput = screen.getByTestId('name');
+  const clientNameInput = screen.getByTestId('clientName');
+  const saveChangesButton = screen.getByText('Save Changes');
+
+  userEvent.type(nameInput, 'Account Name');
+  userEvent.type(clientNameInput, 'Client Name');
+  userEvent.click(saveChangesButton);
+
+  await waitFor(() => {
+    expect(submitAccount).toHaveBeenCalledTimes(1);
+    expect(submitAccount).toHaveBeenCalledWith({
+      accountId: 0,
+      name: 'Account Name',
+      clientName: 'Client Name',
+      operationsManager: '',
     });
   });
-  
+})

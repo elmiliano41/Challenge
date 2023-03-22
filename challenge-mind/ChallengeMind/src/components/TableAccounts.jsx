@@ -138,7 +138,7 @@ function TableAccounts() {
                     <CacheProvider value={muiCache}>
                         <ThemeProvider theme={createTheme()}>
                             <MUIDataTable
-                                title={'Accounts list'}
+                                title={'Accounts registered list'}
                                 data={accounts}
                                 columns={columns}
                                 options={options}

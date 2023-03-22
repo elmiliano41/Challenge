@@ -29,7 +29,7 @@ const ChallengeProvider = ({ children }) => {
     };
 
     useEffect(() => {
-
+        getAccounts();
     }, [auth]);
 
     const showAlert = (alert) => {
@@ -94,7 +94,6 @@ const ChallengeProvider = ({ children }) => {
     const submitUser = async (user) => {
         if (user.userId) {
             await updateUser(user);
-            console.log(user);
         } else {
             await newUser(user);
         }
@@ -266,7 +265,6 @@ const ChallengeProvider = ({ children }) => {
             setAccount(data);
             navigate("/dashboard/Accounts/EditAddAccounts");
             setAlert({});
-            console.log(data);
         } catch (error) {
             navigate("/dashboard");
             setAlert({
