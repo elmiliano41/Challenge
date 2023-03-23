@@ -47,7 +47,7 @@ export default function EditUserComp() {
     const [selectedTeam, setSelectedTeam] = useState({});
 
     const navigate = useNavigate();
-    const { getUser, user, submitUser,getTeams, teams } = useChallenge();
+    const { user, submitUser,getTeams, teams } = useChallenge();
     const { auth } = useAuth();
 
     const [open, setOpen] = useState(false);
@@ -129,7 +129,6 @@ export default function EditUserComp() {
         },
         validationSchema,
         onSubmit: (values) => {
-            console.log('Form values: ', values); 
             submitUser(values);
         },
     });
@@ -179,6 +178,7 @@ export default function EditUserComp() {
                             fullWidth
                             id="name"
                             label="Name"
+                            data-testId="name"
                             onChange={formik.handleChange}
                             value={formik.values.name || ''}
                             error={formik.touched.name && Boolean(formik.errors.name)}
@@ -187,6 +187,7 @@ export default function EditUserComp() {
                         <TextField
                             fullWidth
                             id="email"
+                            data-testId="email"
                             onChange={formik.handleChange}
                             label="Email Address"
                             value={formik.values.email || ''}
@@ -199,6 +200,7 @@ export default function EditUserComp() {
                                 labelId="englishLevel-label"
                                 id="englishLevelId"
                                 name="englishLevelId"
+                                data-testId="englishLevelId"
                                 value={formik.values.englishLevelId}
                                 onChange={formik.handleChange}
                                 error={formik.touched.englishLevelId && Boolean(formik.errors.englishLevelId)}
@@ -217,6 +219,7 @@ export default function EditUserComp() {
                             id="technicalKnowledge"
                             label="Technical Knowledge"
                             name="technicalKnowledge"
+                            data-testId="technicalKnowledge"
                             multiline
                             rows={4}
                             value={formik.values.technicalKnowledge}
@@ -229,6 +232,7 @@ export default function EditUserComp() {
                             id="cv"
                             label="CV Link (Google Doc)"
                             name="cv"
+                            data-testId="cv"
                             value={formik.values.cv}
                             onChange={formik.handleChange}
                             error={formik.touched.cv && Boolean(formik.errors.cv)}
@@ -240,6 +244,7 @@ export default function EditUserComp() {
                             label="Password"
                             type="password"
                             name="password"
+                            data-testId="password"
                             value={formik.values.password}
                             onChange={formik.handleChange}
                             error={formik.touched.password && Boolean(formik.errors.password)}
@@ -250,6 +255,7 @@ export default function EditUserComp() {
                             fullWidth
                             id="teamId"
                             name="teamId"
+                            data-testId="teamId"
                             disabled
                             value={selectedTeam ? selectedTeam.name : ''}
                             onChange={formik.handleChange}
@@ -260,6 +266,7 @@ export default function EditUserComp() {
                         {auth.isSU == true ? (
                             <FormControl fullWidth style={{ marginBottom: theme.spacing(2), textAlign: 'center' }}>
                                 <FormControlLabel
+                                        data-testId="isAdmin"
                                     control={
                                         <Checkbox
                                             checked={formik.values.isAdmin}

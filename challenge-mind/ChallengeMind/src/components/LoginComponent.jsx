@@ -1,3 +1,4 @@
+import useAuth from '../hooks/useAuth';
 import AxiosClient from '../config/AxiosClient';
 import { useState } from 'react';
 import * as React from 'react';
@@ -13,6 +14,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -29,16 +31,21 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-function LoginComponent() {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [alert, setAlert]= useState({});
+
+  const {setAuth} = useAuth();
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();  
     const headers = {
       "Content-Type": "text/plain",
     };
+  
     if ([email, password].includes("")) {
       setAlert({
         msg: "All the fields are required",
@@ -53,14 +60,11 @@ function LoginComponent() {
           email: email,
           password: password,
         }
-      );
-      setAlert({});
+      )
+      setAlert({})
       localStorage.setItem("token", data.userToken);
-      setAuth(data);
+      setAuth(data)
       navigate("/dashboard");
-      // Debugging line
-      console.log('Calling onLogin function');
-      onLogin();
     } catch (error) {
       setAlert({
         msg: error.response.data,
@@ -69,9 +73,7 @@ function LoginComponent() {
     }
   };
   
-  
-  
-  const {msg } = alert;
+  const { msg } = alert;
 
   return (
     <ThemeProvider theme={theme}>
@@ -107,12 +109,13 @@ function LoginComponent() {
             <Typography component="h1" variant="h5">
               Sign in
             </Typography>
-            <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
+            <Box component="form"   aria-label="login form"  noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
             {msg && <Alert alert={alert} />}
               <TextField
                 margin="normal"
                 required
                 fullWidth
+                name='email'
                 id="email"
                 data-testid="email-input"
                 label="Email Address"
@@ -124,11 +127,11 @@ function LoginComponent() {
                 margin="normal"
                 required
                 fullWidth
+                data-testid="password-input"
                 name="password"
                 label="Password"
                 type="password"
                 id="password"
-                data-testid="password-input"
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete="current-password"
               />
@@ -151,4 +154,4 @@ function LoginComponent() {
   );
 }
 
-export default LoginComponent;
+export default Login;

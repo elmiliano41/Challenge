@@ -1,14 +1,20 @@
 import AxiosClient from "../config/AxiosClient";
 
-    test('Testing API config',()=>{
+describe('Test on API', ()=>{
+
+    test('Testing API default config',()=>{
+
         expect(AxiosClient.defaults.baseURL).toBe(process.env.VITE_BACKEND_URL);
+        
     });
-    // test('Needs a token in headers of all request', async()=>{
+    test('Needs a token in headers of all request', async()=>{
+        const token = "ABC-123-XYZ";
+        localStorage.setItem("token", token);
+        const res = await AxiosClient
+          .get("/auth")
+          .then((res) => res)
+          .catch((res) => res);
+        expect(res.config.headers["x-token"]).toBe(token);
+      });
 
-    //     const token1='ABC-123-XYZ';
-    //     localStorage.setItem('token1',token1);
-    //     const res= await AxiosClient.get("/auth");
-
-    //     expect(res.config.headers['token']).toBe(token1);
-
-    // })
+})

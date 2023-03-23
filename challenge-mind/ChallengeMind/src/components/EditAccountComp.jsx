@@ -158,12 +158,14 @@ export default function EditAccountComp() {
                             fullWidth
                             id="name"
                             label="Name"
+                            data-testid="name"
                             onChange={formik.handleChange}
                             value={formik.values.name || ''}
                             style={{ marginBottom: theme.spacing(2) }} />
                         <TextField
                             fullWidth
                             id="clientName"
+                            data-testid="clientName"
                             label="Client Name"
                             onChange={formik.handleChange}
                             value={formik.values.clientName}
@@ -171,6 +173,7 @@ export default function EditAccountComp() {
                         <TextField
                             fullWidth
                             id="operationsManager"
+                            data-testid="operationsManager"
                             onChange={formik.handleChange}
                             disabled
                             value={selectedUser ? selectedUser.name : ''}

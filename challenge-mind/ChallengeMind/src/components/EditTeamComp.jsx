@@ -15,8 +15,10 @@ import CheckIcon from '@mui/icons-material/Check';
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import useChallenge from '../hooks/useChallenge';
+import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 import { useFormik } from 'formik';
+import useAuth from '../hooks/useAuth';
 
 const theme = createTheme();
 
@@ -39,7 +41,9 @@ export default function EditTeamComp() {
     const [showConfirmation, setShowConfirmation] = useState(false);
     const [selectedAccount, setSelectedAccount] = useState({});
 
-    const {  team, submitTeam , getAccounts, accounts} = useChallenge();
+    const navigate = useNavigate();
+    const { getTeam, team, submitTeam , getAccounts, accounts} = useChallenge();
+    const { auth } = useAuth();
     const validationSchema = yup.object({
         name: yup.string().required('Team name is required'),
     });
@@ -128,6 +132,7 @@ export default function EditTeamComp() {
             accountId: team.accountId || 1 || selectedAccount,
         });
     }, [team]);
+    
 
     return (
         <><br /><br /><ThemeProvider theme={theme}>
